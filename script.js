@@ -66,24 +66,10 @@ function deleteDataStat1(){
 
 function deleteDataStat2(){
 
-	/*Switch(name) {
+	const selectedValue	 = document.getElementById('naamS2').value;
+	const number 		 = parseInt(document.getElementById('numS2').value);
 
-		case "Douches":
-		chart2.data.datasets[0].data.pop(number);
-		break;
-
-		case "Planten":
-		break;
-
-		case "Vaatwassers":
-		break;
-
-		case "Wasmachines":
-		break;
-
-		case "Kranen":
-		break;
-	} */
+	chart2.data.datasets[0].data[selectedValue] -= number;
 
 	chart2.update();
 }
