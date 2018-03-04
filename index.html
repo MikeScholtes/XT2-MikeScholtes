@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title> SpaceX ITSI </title>
+	 <link type="text/css" rel="stylesheet" href="opmaak.css"/>
+	 <meta name="viewport" content="width=device-width">
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+	 <script src="script.js"></script>
+	 <script src="data.js"></script>
+</head>
+<body>
+
+<div id="schermen">
+
+<!-- Nav/Header  -->
+ 	<div id="nav"> <h1> Algemene informatie Interplantery Transport System </div>
+
+<!-- Hieruit word de eerste grafiek getoond  -->
+ 	<div id="grafiek1"> 
+ 	 	    <canvas id="statistiek1">  </canvas> 
+ 	 	    <input id=naamS1 type="text" placeholder="Voeg een naam toe"/>
+ 	 	  	<input id="numS1" type="number" placeholder="voeg een getal toe"/>
+ 			<button id="buttonS1" onclick="addDataStat1()">Voeg data toe</button>
+ 			<button id="undoS1" onclick="deleteDataStat1()">delete data</button>
+ 	</div>
+
+<!-- Hieruit word de tweede grafiek getoond  -->
+ 	<div id="grafiek2"> 
+ 		 	<canvas id="statistiek2">  </canvas> 
+ 	 	    <!-- <input id=naamS2 type="text" placeholder="Douches, Planten, Vaatwassers, Wasmachines, Kranen"/> -->
+
+ 	 	    <select id="naamS2">
+ 	 	    	<option value="0">Douches</option>
+ 	 	    	<option value="1">Planten</option>
+ 	 	    	<option value="2">Vaatwassers</option>
+ 	 	    	<option value="3">Wasmachines</option>
+ 	 	    	<option value="4">Kranen</option>
+ 	 	    </select>
+
+ 	 	  	<input id="numS2" type="number" placeholder="voeg een getal toe"/>
+ 			<button id="buttonS2" onclick="addDataStat2()">Voeg data toe</button>
+ 			<button id="undoS2" onclick="deleteDataStat2()">delete data</button>
+ 	</div>
+
+<!-- Hieruit word de derde grafiek getoond  -->
+ 	<div id="grafiek3">
+ 		 	<canvas id="statistiek3">  </canvas> 
+ 	 	    <input id=naamS3 type="text" placeholder="Voeg een naam toe"/>
+ 	 	  	<input id="numS3" type="number" placeholder="voeg een getal toe"/>
+ 			<button id="buttonS3" onclick="addDataStat3()">Voeg data toe</button>
+ 			<button id="undoS3" onclick="deleteDataStat3()">delete data</button>
+ 	</div>
+
+<!-- Footer  -->
+ 	<div id="footer"> Mike Scholtes, 16046625 2C </div>
+
+ </div>
+</body>
+
