@@ -1,0 +1,124 @@
+
+body {
+	text-align: center;
+	color: grey;
+	font-size: 70px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	background-image: url("../images/background4.jpg");
+	background-repeat: no-repeat;
+
+}
+
+#nav {
+	grid-area: nav;
+	text-align: left;
+}	
+
+#locatie1 {
+	grid-area: locatie1;
+	text-align: left;
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+#locatie2 {
+	grid-area: locatie2;
+	text-align: left;
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+#locatie3 {
+	grid-area: locatie3;
+	text-align: left;
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+#maps {
+	grid-area: maps;
+	height: 35vw;
+	min-height: 35vw;
+}
+
+#lz1 {
+	grid-area: lz1;
+	font-size: 25px;
+	margin-top: 20px;
+	color: white;
+	background-color: #222222;
+	min-width: 80px;
+	width: 4vw;
+	padding: 6px;
+	text-align: center;
+}
+
+#lz2 {
+	grid-area: lz2;
+	font-size: 25px;
+	margin-top: 20px;
+	color: white;
+	background-color: #222222;
+	min-width: 80px;
+	width: 4vw;
+	padding: 6px;
+	text-align: center;
+}
+
+#lz3 {
+	grid-area: lz3;
+	font-size: 25px;
+	margin-top: 20px;
+	color: white;
+	background-color: #222222;
+	min-width: 80px;
+	width: 4vw;
+	padding: 6px;
+	text-align: center;
+}
+
+#grid {
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr 4fr 1fr 4fr;
+	grid-auto-rows: minmax(100px, auto);
+	margin: 30px;
+	grid-template-areas: 
+	"maps maps maps maps maps maps"
+	"lz1 locatie1 lz2 locatie2 lz3 locatie3"
+
+}
+
+
+
+/* Mediaquery voor tablets*/
+@media screen and (max-width: 768px) {
+
+	#grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr 2fr;
+	grid-auto-rows: minmax(100px, auto);
+	margin: 15px;
+	grid-template-areas: 
+	"maps maps maps maps"
+	"lz1 locatie1 lz2 locatie2"
+	"lz3 locatie3 locatie3 locatie3"
+	}
+	
+}
+
+/* Mediaquery voor Smartphones*/
+@media screen and (max-width: 425px) {
+
+	#grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-auto-rows: minmax(100px, auto);
+	margin: 15px;
+	grid-template-areas: 
+	"maps maps"
+	"lz1 locatie1"
+	"lz2 locatie2"
+	"lz3 locatie3"
+	}
+
+}
